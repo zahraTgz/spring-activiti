@@ -3,7 +3,7 @@
   <process id="java-delegate-service-task-process" isClosed="false" isExecutable="true" name="Activiti Service Task using Java Delegates" processType="None">
     <startEvent id="startevent1" name="Start"/>
     <endEvent id="endevent1" name="End"/>
-    <serviceTask activiti:class="com.isc.mcb.service.JavaDelegateService" activiti:exclusive="true" id="javadeletegateservicetask" name="Java Delegate Service Task"/>
+    <serviceTask activiti:class="com.example.springactiviti.service.JavaDelegateService" activiti:exclusive="true" id="javadeletegateservicetask" name="Java Delegate Service Task"/>
     <sequenceFlow id="_5" name="flow1" sourceRef="startevent1" targetRef="javadeletegateservicetask"/>
     <sequenceFlow id="_6" name="flow2" sourceRef="javadeletegateservicetask" targetRef="endevent1"/>
   </process>
